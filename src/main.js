@@ -6,7 +6,11 @@ document.addEventListener("DOMContentLoaded", () => {
       if (entry.isIntersecting) {
         const animation = entry.target.dataset.animate;
         entry.target.classList.add("animate__animated", `animate__${animation}`);
-        observer.unobserve(entry);
+        if (entry.isIntersecting && entry.target instanceof Element) {
+          const animation = entry.target.dataset.animate;
+          entry.target.classList.add("animate__animated", `animate__${animation}`);
+          observer.unobserve(entry.target);
+        }
       }
     })
   }, {
