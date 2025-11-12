@@ -1,0 +1,96 @@
+.swiper-global {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 55px;
+    .slide-container {
+        max-width: 1294px;
+        width: 100%;
+        .slide-content {
+            margin: 0 40px;
+            overflow: hidden;
+            .card {
+                border-radius: 30px;
+                border: 2px solid rgba(218, 218, 218, 1);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 15px 35px 35px 35px;
+                background: none;
+                transition: border 0.3s ease;
+                &:hover {
+                    border: 2px solid rgba(53, 198, 107, 1);
+                }
+                > img {
+                    width: 200px;
+                    height: 252px;
+                }
+                .card-coffee__title {
+                    color: rgba(255, 255, 255, 1);
+                    font-family: 'Montserrat';
+                    font-size: 32px;
+                    font-weight: 500;
+                    line-height: 163.47%;
+                    letter-spacing: -2%;
+                }
+                .card-coffee__item {
+                    color: rgba(217, 217, 217, 1);
+                    font-family: 'Montserrat';
+                    font-size: 20.13px;
+                    font-weight: 400;
+                    line-height: 163.47%;
+                    letter-spacing: -2%;
+                    text-align: center;
+                    margin-top: 15px;
+                    width: 216px;
+                }
+                .card-coffee__btn {
+                    border-radius: 59.72px;
+                    background: linear-gradient(209.99deg, rgba(35.259639739990234, 113.67274475097656, 73.06596374511719, 1), rgba(53.062068939208984, 197.61024475097656, 107.04993438720703, 1) 100%);
+                    padding: 15px 40px;
+                    color: rgba(255, 255, 255, 1);
+                    font-family: 'Montserrat';
+                    font-size: 17.3px;
+                    font-weight: 600;
+                    line-height: 146.47%;
+                    letter-spacing: -2%;
+                    border: none;
+                    margin-top: 25px;
+                    transition: color 0.3s ease;
+                    &:hover {
+                        color: black;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    .swiper-next {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+.coffee-info {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+
+    .coffee-info__title {
+        color: rgba(255, 255, 255, 1);
+        font-family: 'Montserrat';
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 163.47%;
+        letter-spacing: -2%;
+    }
+
+    .coffee-info__item {
+        color: rgba(217, 217, 217, 1);
+        font-family: 'Montserrat';
+        font-size: 20.13px;
+        font-weight: 400;
+        line-height: 163.47%;
+        letter-spacing: -2%;
+    }
+}
