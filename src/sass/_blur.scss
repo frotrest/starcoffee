@@ -1,0 +1,115 @@
+.blur {
+    width: 324px;
+    height: 324px;
+    filter: blur(175.5px);
+    position: absolute;
+    background: linear-gradient(244.98deg, rgba(35.259639739990234, 113.67274475097656, 73.06596374511719, 0.11), rgba(53.062068939208984, 197.61024475097656, 107.04993438720703, 0.15) 52%);
+}
+
+.blur-description-top {
+    position: absolute;
+    left: -200px;
+    top: 0;
+    width: 408px;
+    height: 327px;
+    filter: blur(177.12498474121094px);
+    background: linear-gradient(244.98deg, rgba(35.259639739990234, 113.67274475097656, 73.06596374511719, 0.17), rgba(53.062068939208984, 197.61024475097656, 107.04993438720703, 0.22) 52%);
+}
+
+.blur-description-bottom {
+    position: absolute;
+    right: -100px;
+    bottom: 0;
+    width: 225px;
+    height: 230px;
+    filter: blur(124.04166412353516px);
+    background: rgba(217, 217, 217, 0.3);
+}
+
+.blur-text {
+    width: 310px;
+    height: 267px;
+    position: absolute;
+    right: 185px;
+    filter: blur(144.62498474121094px);
+    background: linear-gradient(244.98deg, rgba(35.259639739990234, 113.67274475097656, 73.06596374511719, 0.11), rgba(53.062068939208984, 197.61024475097656, 107.04993438720703, 0.15) 52%);
+}
+
+.blur-restoran {
+    width: 289px;
+    height: 245px;
+    position: absolute;
+    left: -150px;
+    bottom: 0;
+    filter: blur(144.62498474121094px);
+    background: linear-gradient(244.98deg, rgba(35.259639739990234, 113.67274475097656, 73.06596374511719, 0.11), rgba(53.062068939208984, 197.61024475097656, 107.04993438720703, 0.15) 52%);
+}
+
+.title-blur {
+    filter: blur(145.59999084472656px);
+    background: linear-gradient(244.98deg, rgba(35.259639739990234, 113.67274475097656, 73.06596374511719, 0.11), rgba(53.062068939208984, 197.61024475097656, 107.04993438720703, 0.15) 52%);
+    width: 289px;
+    height: 245px;
+    position: absolute;
+    left: 500px;
+}
+
+.icon-blur {
+    filter: blur(145.59999084472656px);
+    background: linear-gradient(244.98deg, rgba(35.259639739990234, 113.67274475097656, 73.06596374511719, 0.11), rgba(53.062068939208984, 197.61024475097656, 107.04993438720703, 0.15) 52%);
+    width: 289px;
+    height: 245px;
+    position: absolute;
+    right: 425px;
+    z-index: -1;
+}
+
+.card-blur {
+    filter: blur(100.76123809814453px);
+    background: linear-gradient(244.98deg, rgba(35.259639739990234, 113.67274475097656, 73.06596374511719, 0.08), rgba(53.062068939208984, 197.61024475097656, 107.04993438720703, 0.11) 52%);
+    width: 289px;
+    height: 245px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.card-blur-two {
+    filter: blur(100.76123809814453px);
+    background: linear-gradient(244.98deg, rgba(35.259639739990234, 113.67274475097656, 73.06596374511719, 0.08), rgba(53.062068939208984, 197.61024475097656, 107.04993438720703, 0.11) 52%);
+    width: 289px;
+    height: 245px;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+}
+
+.contact-blur {
+    position: absolute;
+    z-index: -1;
+    width: 328px;
+    height: 262px;
+    top: 150px;
+    filter: blur(129.6066131591797px);
+    background: linear-gradient(244.98deg, rgba(35.259639739990234, 113.67274475097656, 73.06596374511719, 0.08), rgba(53.062068939208984, 197.61024475097656, 107.04993438720703, 0.11) 52%);
+}
+
+.footer-blur {
+    position: absolute;
+    z-index: -1;
+    width: 322px;
+    height: 277px;
+    filter: blur(150.15570068359375px);
+    background: rgba(217, 217, 217, 0.12);
+    right: 0;
+    top: -100px;
+}
+
+.footer-title-blur {
+    position: absolute;
+    z-index: -1;
+    width: 177px;
+    height: 66px;
+    filter: blur(96.31588745117188px);
+    background: linear-gradient(244.98deg, rgba(35.259639739990234, 113.67274475097656, 73.06596374511719, 0.08), rgba(53.062068939208984, 197.61024475097656, 107.04993438720703, 0.11) 52%);
+}

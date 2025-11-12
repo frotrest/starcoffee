@@ -1,0 +1,67 @@
+.contacts {
+    padding-top: 150px;
+    padding-bottom: 100px;
+    background: url("../img/contacts-lines.png") no-repeat top 300px right -65px / auto;
+    .contacts-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & > img {
+            transition: transform 0.3s ease;
+            &:hover {
+                transform: translateY(-30px);
+                cursor: pointer;
+            }
+        }
+        .contacts-text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 55px;
+            position: relative;
+            &__title {
+                color: white;
+                width: 365px;
+                font-family: 'Montserrat';
+                font-size: 80px;
+                font-weight: 800;
+                line-height: 109.47%;
+                letter-spacing: -3%;
+                & > span {
+                    background: linear-gradient(222.68deg, rgba(35, 113, 73, 1), rgba(53, 197, 107, 1) 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    }
+            }
+            &__item {
+                color: rgba(217, 217, 217, 1);
+                font-family: 'Montserrat';
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 163.47%;
+                letter-spacing: -2%;
+                width: 400px;
+            }
+            .contacts-links {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 40px;
+                &__item {
+                    color: rgba(255, 255, 255, 1);
+                    font-family: 'Montserrat';
+                    font-size: 32px;
+                    font-weight: 500;
+                    line-height: 131.97%;
+                    letter-spacing: 0%;
+                    text-decoration: none;
+                    transition: color 0.3s ease;
+                    &:hover {
+                        color: rgb(39, 158, 97);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+.restoran {
+    padding-top: 100px;
+    background-image: url("../img/lines-left.png");
+    background-repeat: no-repeat;
+    background-position: 1110px 325px;
+    .restoran-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .restoran-text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 65px;
+            &__title {
+                color: white;
+                font-family: 'Montserrat';
+                font-size: 80px;
+                font-weight: 800;
+                line-height: 109.47%;
+                letter-spacing: -3%;
+                width: 410px;
+                & > span {
+                        background: linear-gradient(222.68deg, rgba(35, 113, 73, 1), rgba(53, 197, 107, 1) 100%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;
+                }
+            }
+            &__item {
+                color: rgba(217, 217, 217, 1);
+                font-family: 'Montserrat';
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 163.47%;
+                letter-spacing: -2%;
+                width: 457px;
+            }
+            .cooking {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                transition: transform 0.3s ease;
+                &:hover {
+                    transform: translateY(-30px);
+                    cursor: pointer;
+                }
+            &__btn {
+                    border: none;
+                    border-radius: 82.83px;
+                    background: linear-gradient(209.99deg, rgba(35.259639739990234, 113.67274475097656, 73.06596374511719, 1), rgba(53.062068939208984, 197.61024475097656, 107.04993438720703, 1) 100%);
+                    position: absolute;
+                    color: rgba(217, 217, 217, 1);
+                    font-family: 'Montserrat';
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 163.47%;
+                    letter-spacing: -2%;
+                    padding: 15px 45px;
+                    bottom: 100px;
+                    left: 100px;
+                }
+            }
+        }
+    }
+}

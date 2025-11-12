@@ -1,3 +1,37 @@
 @import './components/header';
 @import './components/_main/main-styles';
+@import './carousel';
 @import './components/footer';
+@import './blur';
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background: rgba(18, 21, 23, 1);
+}
+
+.container {
+    width: 1294px;
+    margin: 0px auto;
+}
+
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: inherit;
+    }
+}
+
+.img-restoran {
+    position: relative;
+}
+
+.swiper {
+    margin-left: 0px;
+    margin-right: 0px;
+}
