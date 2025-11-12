@@ -693,6 +693,7 @@
   height: 324px;
   filter: blur(175.5px);
   position: absolute;
+  z-index: -1;
   background: linear-gradient(244.98deg, rgba(35.25963974, 113.672744751, 73.0659637451, 0.11), rgba(53.0620689392, 197.610244751, 107.0499343872, 0.15) 52%);
 }
 
@@ -708,6 +709,7 @@
 
 .blur-description-bottom {
   position: absolute;
+  z-index: -1;
   right: -100px;
   bottom: 0;
   width: 225px;
@@ -720,6 +722,7 @@
   width: 310px;
   height: 267px;
   position: absolute;
+  z-index: -1;
   right: 185px;
   filter: blur(144.6249847412px);
   background: linear-gradient(244.98deg, rgba(35.25963974, 113.672744751, 73.0659637451, 0.11), rgba(53.0620689392, 197.610244751, 107.0499343872, 0.15) 52%);
@@ -729,6 +732,7 @@
   width: 289px;
   height: 245px;
   position: absolute;
+  z-index: -1;
   left: -150px;
   bottom: 0;
   filter: blur(144.6249847412px);
@@ -741,6 +745,7 @@
   width: 289px;
   height: 245px;
   position: absolute;
+  z-index: -1;
   left: 500px;
 }
 
