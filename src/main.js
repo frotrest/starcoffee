@@ -1,3 +1,24 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const animatedElements = document.querySelectorAll("[data-animate]");
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const animation = entry.target.dataset.animate;
+        entry.target.classList.add("animate__animated", `animate__${animation}`);
+        observer.unobserve(entry);
+      }
+    })
+  }, {
+    root: null,
+    threshold: 0.1,
+  })
+
+  animatedElements.forEach(el => {
+    observer.observe(el);
+  })
+});
+  
 const swiper = new Swiper(".slide-content", {
     slidesPerView: 3,
     spaceBetween: 25,
@@ -12,4 +33,4 @@ const swiper = new Swiper(".slide-content", {
     navigation: {
       nextEl: ".swiper-next",
     }
-  });
+});

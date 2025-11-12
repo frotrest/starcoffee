@@ -71,7 +71,7 @@
   font-weight: 800;
   line-height: 109.47%;
   color: white;
-  width: 561px;
+  width: 565px;
 }
 .intro .intro-content .hero-content__title > span {
   display: inline-block;
@@ -832,4 +832,15 @@ body {
 .swiper {
   margin-left: 0px;
   margin-right: 0px;
+}
+
+[data-animate] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+[data-animate].visible {
+  opacity: 1;
+  transform: translateY(0);
 }
