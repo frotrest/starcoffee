@@ -7,23 +7,15 @@
     <title>StarBucks</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header" id="header">
+    <header class="header" id="header" data-animate="fadeIn">
       <div class="container header-content">
         <h2 class="header-content__logo">StarBucks</h2>
         <nav class="nav-bar">
@@ -67,7 +59,7 @@
           </div>
           <img src="./img/hero.png" alt="hero" />
         </div>
-        <div class="container description">
+        <div class="container description" data-animate="fadeInUp">
           <div class="blur-description-top"></div>
           <img
             src="./img/we-have.png"
@@ -97,11 +89,11 @@
       </section>
       <section class="restoran">
         <div class="container restoran-content">
-          <div class="img-restoran">
+          <div class="img-restoran" data-animate="fadeInLeft">
             <div class="blur-restoran"></div>
             <img src="./img/restoran.png" alt="restoran" />
           </div>
-          <div class="restoran-text">
+          <div class="restoran-text" data-animate="fadeInRight">
             <div class="blur-text"></div>
             <h2 class="restoran-text__title">We make <span>delicious</span></h2>
             <p class="restoran-text__item">
@@ -118,7 +110,7 @@
       </section>
       <section class="products" id="products">
         <div class="container products-content">
-          <div class="description">
+          <div class="description" data-animate="fadeInRight">
             <div class="title-blur"></div>
             <h2 class="description__title">New Our <span>Products</span></h2>
             <p class="description__item">
@@ -128,7 +120,7 @@
             </p>
           </div>
         </div>
-        <div class="swiper-global">
+        <div class="swiper-global" data-animate="fadeInLeft">
           <div class="slide-container swiper">
             <div class="slide-content">
               <div class="card-wrapper swiper-wrapper">
@@ -177,11 +169,11 @@
       </section>
       <section class="events" id="events">
         <div class="container events-content">
-          <div class="events-text">
+          <div class="events-text" data-animate="fadeInRight">
             <p class="events-text__item">Only in 2021 we have made more than 100,000 orders for you, your loved ones, all of you, and in 2022 we are ready to destroy the market</p>
             <h2 class="events-text__title">Our New <span>Events</span></h2>
           </div>
-          <div class="events-cards">
+          <div class="events-cards" data-animate="fadeInLeft">
             <div class="card-blur"></div>
             <div class="event-card two-coffee">
               <h5 class="event-card__title">TWO COFFEE FOR 1 PRICE</h5>
@@ -209,7 +201,7 @@
       </section>
       <section class="contacts">
         <div class="container contacts-content">
-          <div class="contacts-text">
+          <div class="contacts-text" data-animate="fadeInLeft">
             <h2 class="contacts-text__title">Our <span>Contacts</span></h2>
             <div class="contact-blur"></div>
             <p class="contacts-text__item">Have time to buy the most harmonious drinks in the new Starbucks coffee and don't forget about the discount!</p>
@@ -218,13 +210,13 @@
               <a href="tel:+79999999999" class="contacts-links__item">+7-999-999-99-99</a>
             </div>
           </div>
-          <img src="./img/contact.png" alt="contact">
+          <img src="./img/contact.png" alt="contact" data-animate="fadeInRight">
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="footer-blur"></div>
-      <div class="container footer-content">
+      <div class="container footer-content" data-animate="fadeInUp">
         <div class="footer-main">
           <div class="footer-title-blur"></div>
           <h5 class="footer-main__title">StarBucks</h5>
