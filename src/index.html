@@ -18,6 +18,7 @@
     <header class="header" id="header" data-animate="fadeIn">
       <div class="container header-content">
         <h2 class="header-content__logo">StarBucks</h2>
+        <img src="./img/burger-menu.png" alt="burger-menu" id="burger-menu">
         <nav class="nav-bar">
           <a href="#" class="nav-bar__item">Home</a>
           <a href="#products" class="nav-bar__item">Select</a>
@@ -28,6 +29,7 @@
     <main class="main">
       <section class="intro">
         <div class="container intro-content" data-animate="fadeInLeft">
+          <img src="./img/mobile-coffee.png" alt="mobile-coffee" id="mobile-hero">
           <div class="hero-content">
             <h1 class="hero-content__title">
               <div class="blur"></div>
@@ -57,7 +59,7 @@
               </div>
             </div>
           </div>
-          <img src="./img/hero.png" alt="hero" />
+          <img src="./img/hero.png" alt="hero" id="dekstop-hero"/>
         </div>
         <div class="container description" data-animate="fadeInUp">
           <div class="blur-description-top"></div>
@@ -78,7 +80,7 @@
             <h3 class="info__title">Fast</h3>
             <p class="info__item">Our cafe will serve you quickly</p>
           </div>
-          <div class="info">
+          <div class="info last-info">
             <div class="background-info"></div>
             <img src="./img/available.png" alt="available" class="info__img" />
             <h3 class="info__title">Available</h3>
@@ -89,9 +91,9 @@
       </section>
       <section class="restoran">
         <div class="container restoran-content">
-          <div class="img-restoran" data-animate="fadeInLeft">
+          <div data-animate="fadeInLeft" id="cooking">
             <div class="blur-restoran"></div>
-            <img src="./img/restoran.png" alt="restoran" />
+            <img src="./img/restoran.png" alt="restoran" class="img-restoran" />
           </div>
           <div class="restoran-text" data-animate="fadeInRight">
             <div class="blur-text"></div>
@@ -115,8 +117,7 @@
             <h2 class="description__title">New Our <span>Products</span></h2>
             <p class="description__item">
               Have time to buy the most harmonious drinks in the new Starbucks
-              coffee and don't forget about the discount! Starbucks coffee and
-              don't forget about the discount!
+              coffee and don't forget about the discount!
             </p>
           </div>
         </div>
@@ -165,6 +166,46 @@
           </div>
           <div class="icon-blur"></div>
           <img src="./img/icon.png" alt="icon" class="swiper-next" />
+        </div>
+        <div class="swiper-global mobile-swiper" data-animate="fadeInLeft">
+        <div class="mobile-slide-container swiper">
+          <div class="mobile-slide-content">
+            <div class="mobile-card-wrapper swiper-wrapper">
+              <div class="mobile-card swiper-slide">
+                <img src="./img/brown-coffee.png" alt="brown-coffee" class="mobile-card__img" />
+                <h3 class="mobile-card__title">Fast</h3>
+                <p class="mobile-card__desc">Our cafe will serve you quickly</p>
+                <div class="mobile-coffee-info">
+                  <h5 class="mobile-coffee-info__price">7,45$</h5>
+                  <p class="mobile-coffee-info__volume">330 ml</p>
+                </div>
+                <button class="mobile-card__btn">Buy product</button>
+              </div>
+              <div class="mobile-card swiper-slide">
+                <img src="./img/yellow-coffee.png" alt="yellow-coffee" class="mobile-card__img" />
+                <h3 class="mobile-card__title">Fast</h3>
+                <p class="mobile-card__desc">Our cafe will serve you quickly</p>
+                <div class="mobile-coffee-info">
+                  <h5 class="mobile-coffee-info__price">7,45$</h5>
+                  <p class="mobile-coffee-info__volume">330 ml</p>
+                </div>
+                <button class="mobile-card__btn">Buy product</button>
+              </div>
+              <div class="mobile-card swiper-slide">
+                <img src="./img/green-coffee.png" alt="green-coffee" class="mobile-card__img" />
+                <h3 class="mobile-card__title">Cappuccino</h3>
+                <p class="mobile-card__desc">Our cafe will serve you quickly</p>
+                <div class="mobile-coffee-info">
+                  <h5 class="mobile-coffee-info__price">7,45$</h5>
+                  <p class="mobile-coffee-info__volume">330 ml</p>
+                </div>
+                <button class="mobile-card__btn">Buy product</button>
+              </div>
+            </div>
+          </div>
+        </div>
+  <div class="mobile-icon-blur"></div>
+  <img src="./img/icon.png" alt="icon" class="mobile-swiper-next" />
         </div>
       </section>
       <section class="events" id="events">
@@ -256,6 +297,48 @@
             </ul>
           </div>
           <a href="#header" class="footer-main__anchor"><img src="./img/to-header.png" alt="to-header"></a>
+        </div>
+          <div class="mobile-footer">
+          <div class="footer-title-blur"></div>
+          <h5 class="mobile-footer__title">StarBucks</h5>
+          <a href="#header" class="footer-main__anchor"><img src="./img/to-header.png" alt="to-header" id="anchor"></a>
+          <div class="footer-links-container">
+            <div class="footer-links">
+            <h5 class="footer-links__title">Main</h5>
+            <ul class="footer-links-list">
+              <li class="footer-links-list__item">Buy</li>
+              <li class="footer-links-list__item">More</li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h5 class="footer-links__title">We make</h5>
+            <ul class="footer-links-list">
+              <li class="footer-links-list__item">Process</li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h5 class="footer-links__title">Products</h5>
+            <ul class="footer-links-list">
+              <li class="footer-links-list__item">Cappuccino</li>
+              <li class="footer-links-list__item">Fast</li>
+              <li class="footer-links-list__item">Fast</li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h5 class="footer-links__title">Events</h5>
+            <ul class="footer-links-list">
+              <li class="footer-links-list__item">Drinks</li>
+              <li class="footer-links-list__item">Eat</li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h5 class="footer-links__title">Contacts</h5>
+            <ul class="footer-links-list">
+              <li class="footer-links-list__item">Instagram</li>
+              <li class="footer-links-list__item">Number</li>
+            </ul>
+          </div>
+          </div>
         </div>
         <div class="footer-bottom">
           <a href="tel:+79999999999" class="footer-bottom__item">+7-999-999-99-99</a>

@@ -5,6 +5,12 @@
     position: absolute;
     z-index: -1;
     background: linear-gradient(244.98deg, rgba(35.259639739990234, 113.67274475097656, 73.06596374511719, 0.11), rgba(53.062068939208984, 197.61024475097656, 107.04993438720703, 0.15) 52%);
+        @media (max-width: 1294px) {
+        & {
+            width: 320px;
+            height: 320px;
+        }
+    }
 }
 
 .blur-description-top {
@@ -26,6 +32,11 @@
     height: 230px;
     filter: blur(124.04166412353516px);
     background: rgba(217, 217, 217, 0.3);
+    @media (max-width: 1294px) {
+        & {
+            right: 0;
+        }
+    }
 }
 
 .blur-text {
@@ -57,6 +68,11 @@
     position: absolute;
     z-index: -1;
     left: 500px;
+    @media (max-width: 1294px) {
+        & {
+            left: 0;
+        }
+    }
 }
 
 .icon-blur {
@@ -97,6 +113,12 @@
     top: 150px;
     filter: blur(129.6066131591797px);
     background: linear-gradient(244.98deg, rgba(35.259639739990234, 113.67274475097656, 73.06596374511719, 0.08), rgba(53.062068939208984, 197.61024475097656, 107.04993438720703, 0.11) 52%);
+    @media (max-width: 1294px) {
+        & {
+            width: 320px;
+            height: 320px;
+        }
+    }
 }
 
 .footer-blur {
@@ -112,6 +134,7 @@
 
 .footer-title-blur {
     position: absolute;
+    top: 0;
     z-index: -1;
     width: 177px;
     height: 66px;

@@ -18,6 +18,11 @@ body {
 .container {
     width: 1294px;
     margin: 0px auto;
+    @media (max-width: 1294px) {
+        & {
+            width: 320px;
+        }
+    }
 }
 
 
@@ -26,6 +31,21 @@ body {
         max-width: inherit;
     }
 }
+
+
+@media (max-width: 1294px) {
+    .container,
+    .container-fluid,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
 
 .img-restoran {
     position: relative;
@@ -45,4 +65,12 @@ body {
 [data-animate].visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+.last-info {
+    padding-bottom: 25px;
+}
+
+.mobile-card.swiper-slide {
+    width: 180px !important;
 }
