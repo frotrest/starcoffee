@@ -3,9 +3,19 @@
     align-items: center;
     justify-content: flex-start;
     padding-top: 55px;
+    @media (max-width: 1294px) {
+        & {
+            display: none;
+        }
+    }
     .slide-container {
         max-width: 1294px;
         width: 100%;
+        @media (max-width: 1294px) {
+            & {
+                max-width: 320px;
+            }
+        }
         .slide-content {
             margin: 0 40px;
             overflow: hidden;
@@ -18,6 +28,12 @@
                 padding: 15px 35px 35px 35px;
                 background: none;
                 transition: border 0.3s ease;
+                @media (max-width: 1294px) {
+                    & {
+                        max-width: 320px;
+                        padding: 20px 20px;
+                    }
+                }
                 &:hover {
                     border: 2px solid rgba(53, 198, 107, 1);
                 }
@@ -93,4 +109,123 @@
         line-height: 163.47%;
         letter-spacing: -2%;
     }
+}
+
+// Mobile Swiper (Custom)
+
+.mobile-swiper {
+    display: none;
+}
+
+@media (max-width: 1294px) {
+    .mobile-swiper {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding-top: 40px;
+            .mobile-slide-container {
+                max-width: 320px;
+                width: 100%;
+                .mobile-slide-content {
+                    margin: 0px;
+                    overflow: hidden;
+                    .mobile-card-wrapper {
+                        display: flex;
+                        gap: 16px;
+                    }
+                    .mobile-card {
+                        border-radius: 20px;
+                        border: 2px solid rgba(218, 218, 218, 1);
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        padding: 10px 25px 20px 25px;
+                        background: none;
+                        transition: border 0.3s ease;
+                        flex-shrink: 0;
+                        &:hover {
+                            border: 2px solid rgba(53, 198, 107, 1);
+                        }
+                        .mobile-card__img {
+                            width: 120px;
+                            height: 160px;
+                        }
+                        .mobile-card__title {
+                            color: rgba(255, 255, 255, 1);
+                            font-family: 'Montserrat';
+                            font-size: 21.15px;
+                            font-weight: 500;
+                            line-height: 163.47%;
+                            letter-spacing: -2%;
+                            margin-top: 10px;
+                        }
+                        .mobile-card__desc {
+                            color: rgba(217, 217, 217, 1);
+                            font-family: 'Montserrat';
+                            font-size: 13.31px;
+                            font-weight: 400;
+                            line-height: 163.47%;
+                            letter-spacing: -2%;
+                            text-align: center;
+                        }
+                        .mobile-coffee-info {
+                            display: flex;
+                            align-items: center;
+                            gap: 20px;
+                            margin-top: 15px;
+                            .mobile-coffee-info__price {
+                                color: rgba(255, 255, 255, 1);
+                                font-family: 'Montserrat';
+                                font-size: 21.15px;
+                                font-weight: 500;
+                                line-height: 163.47%;
+                                letter-spacing: -2%;
+                            }
+                            .mobile-coffee-info__volume {
+                                color: rgba(217, 217, 217, 1);
+                                font-family: 'Montserrat';
+                                font-size: 13.31px;
+                                font-weight: 400;
+                                line-height: 163.47%;
+                                letter-spacing: -2%;
+                            }
+                        }
+                        .mobile-card__btn {
+                            border-radius: 40px;
+                            background: linear-gradient(210deg, #237149, #35c56b);
+                            padding: 10px 20px;
+                            color: rgba(255, 255, 255, 1);
+                            font-family: 'Montserrat';
+                            font-size: 11.44px;
+                            font-weight: 600;
+                            line-height: 146.47%;
+                            letter-spacing: -2%;
+                            border: none;
+                            margin-top: 20px;
+                            transition: color 0.3s ease;
+                            &:hover {
+                                color: black;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+            .mobile-swiper-next {
+                margin-left: 0px;
+                width: 40px;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+            .mobile-icon-blur {
+                filter: blur(145.59999084472656px);
+                background: linear-gradient(244.98deg, rgba(35.259639739990234, 113.67274475097656, 73.06596374511719, 0.11), rgba(53.062068939208984, 197.61024475097656, 107.04993438720703, 0.15) 52%);
+                width: 132px;
+                height: 112px;
+                position: absolute;
+                right: 0;
+                z-index: -1;
+            }
+        }
 }
