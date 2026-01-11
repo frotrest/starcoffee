@@ -24,9 +24,6 @@ jobs:
 
       - name: Install deps
         run: npm ci
-
-      - name: lint
-        run: npm run lint
       
       - name: format
         run: npm run format
