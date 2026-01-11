@@ -6,17 +6,19 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=/starcoffee/",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "npx eslint . --fix",
+    "format": "npx prettier --write ."
   },
   "devDependencies": {
+    "eslint": "^9.39.2",
+    "eslint-config-prettier": "^10.1.8",
     "glob": "^11.0.0",
-    "postcss": "^8.4.41",
-    "postcss-sort-media-queries": "^5.2.0",
-    "vite": "^5.4.6"
+    "prettier": "^3.7.4",
+    "vite": "^7.3.1"
   },
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
-  "license": "ISC",
   "dependencies": {
+    "sass": "^1.97.2",
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-html-inject": "^1.1.2"
   }

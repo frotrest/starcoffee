@@ -1,74 +1,83 @@
 .header {
-    padding-top: 50px;
+  padding-top: 50px;
+  @media (max-width: 1294px) {
+    & {
+      padding-top: 35px;
+    }
+  }
+  .header-content {
+    display: flex;
+    align-items: center;
+    gap: 95px;
     @media (max-width: 1294px) {
+      & {
+        gap: 0px;
+        justify-content: space-between;
+      }
+    }
+    &__logo {
+      background: linear-gradient(
+        222.68deg,
+        rgba(35.259639739990234, 113.67274475097656, 73.06596374511719, 1),
+        rgba(53.062068939208984, 197.61024475097656, 107.04993438720703, 1) 100%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-family: 'Montserrat';
+      font-size: 37.6px;
+      font-weight: 800;
+      line-height: 109.47%;
+      letter-spacing: -3%;
+      @media (max-width: 1294px) {
         & {
-            padding-top: 35px;
+          background: linear-gradient(
+            222.68deg,
+            rgba(35.259639739990234, 113.67274475097656, 73.06596374511719, 1),
+            rgba(53.062068939208984, 197.61024475097656, 107.04993438720703, 1)
+              100%
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          font-family: 'Montserrat';
+          font-size: 22.01px;
+          font-weight: 800;
+          line-height: 109.47%;
+          letter-spacing: -3%;
         }
+      }
     }
-    .header-content {
-        display: flex;
-        align-items: center;
-        gap: 95px;
-        @media (max-width: 1294px) {
-            & {
-                gap: 0px;
-                justify-content: space-between;
-            }
+    #burger-menu {
+      display: none;
+      @media (max-width: 1294px) {
+        & {
+          display: inline;
         }
-        &__logo {
-            background: linear-gradient(222.68deg, rgba(35.259639739990234, 113.67274475097656, 73.06596374511719, 1), rgba(53.062068939208984, 197.61024475097656, 107.04993438720703, 1) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text; 
-            font-family: 'Montserrat';
-            font-size: 37.6px;
-            font-weight: 800;
-            line-height: 109.47%;
-            letter-spacing: -3%;
-            @media (max-width: 1294px) {
-                & {
-                    background: linear-gradient(222.68deg, rgba(35.259639739990234, 113.67274475097656, 73.06596374511719, 1), rgba(53.062068939208984, 197.61024475097656, 107.04993438720703, 1) 100%);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    background-clip: text;
-                    font-family: 'Montserrat';
-                    font-size: 22.01px;
-                    font-weight: 800;
-                    line-height: 109.47%;
-                    letter-spacing: -3%;
-                }
-            }
-        }
-        #burger-menu {
-            display: none;
-            @media (max-width: 1294px) {
-                & {
-                    display: inline;
-                }
-            }
-        }
-        .nav-bar {
-            display: flex;
-            align-items: center;
-            gap: 95px;
-            @media (max-width: 1294px) {
-                & {
-                    display: none;
-                }
-            }
-            &__item {
-                color: rgba(217, 217, 217, 1);
-                font-family: 'Montserrat';
-                font-size: 19.17px;
-                font-weight: 400;
-                line-height: 23px;
-                letter-spacing: 0%;
-                text-decoration: none;
-                transition: color 0.3s ease;
-                &:hover {
-                    color: rgb(24, 255, 147);
-                }
-            }
-        }
+      }
     }
+    .nav-bar {
+      display: flex;
+      align-items: center;
+      gap: 95px;
+      @media (max-width: 1294px) {
+        & {
+          display: none;
+        }
+      }
+      &__item {
+        color: rgba(217, 217, 217, 1);
+        font-family: 'Montserrat';
+        font-size: 19.17px;
+        font-weight: 400;
+        line-height: 23px;
+        letter-spacing: 0%;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        &:hover {
+          color: rgb(24, 255, 147);
+        }
+      }
+    }
+  }
 }
