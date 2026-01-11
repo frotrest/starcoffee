@@ -33,7 +33,6 @@ starcoffee/
 │   ├── css/              # Стили
 │   ├── js/               # Скрипты
 │   ├── img/              # Изображения
-│   └── partials/         # Компоненты страницы
 ├── .github/workflows/    # CI/CD конфигурация
 ├── vite.config.js        # Настройки Vite
 ├── package.json          # Скрипты и зависимости
