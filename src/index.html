@@ -5,15 +5,6 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
    <meta name="viewport"  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>StarBucks</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -29,7 +20,7 @@
     <header class="header" id="header" data-animate="fadeIn">
       <div class="container header-content">
         <h2 class="header-content__logo">StarBucks</h2>
-        <img src="./img/burger-menu.png" alt="burger-menu" id="burger-menu" />
+        <img src="./img/burger-menu.webp" alt="burger-menu" id="burger-menu" />
         <nav class="nav-bar">
           <a href="#" class="nav-bar__item">Home</a>
           <a href="#products" class="nav-bar__item">Select</a>
@@ -41,9 +32,10 @@
       <section class="intro">
         <div class="container intro-content" data-animate="fadeInLeft">
           <img
-            src="./img/mobile-coffee.png"
+            src="./img/mobile-coffee.webp"
             alt="mobile-coffee"
             id="mobile-hero"
+            fetchpriority="high"
           />
           <div class="hero-content">
             <h1 class="hero-content__title">
@@ -74,30 +66,31 @@
               </div>
             </div>
           </div>
-          <img src="./img/hero.png" alt="hero" id="dekstop-hero" />
+          <img src="./img/hero.webp" fetchpriority="high" alt="hero" id="dekstop-hero" />
         </div>
         <div class="container description" data-animate="fadeInUp">
           <div class="blur-description-top"></div>
           <img
-            src="./img/we-have.png"
+            src="./img/we-have.webp"
             alt="we-have-badge"
             class="description__img"
+            loading="lazy"
           />
           <div class="info">
             <div class="background-info"></div>
-            <img src="./img/tasty.png" alt="tasty" class="info__img" />
+            <img src="./img/tasty.webp" alt="tasty" class="info__img" loading="lazy" />
             <h3 class="info__title">Tasty</h3>
             <p class="info__item">We have the most delicious coffee</p>
           </div>
           <div class="info">
             <div class="background-info"></div>
-            <img src="./img/fast.png" alt="fast" class="info__img" />
+            <img src="./img/fast.webp" alt="fast" class="info__img" loading="lazy" />
             <h3 class="info__title">Fast</h3>
             <p class="info__item">Our cafe will serve you quickly</p>
           </div>
           <div class="info last-info">
             <div class="background-info"></div>
-            <img src="./img/available.png" alt="available" class="info__img" />
+            <img src="./img/available.webp" alt="available" class="info__img" loading="lazy" />
             <h3 class="info__title">Available</h3>
             <p class="info__item">Cafe will serveat the most pleasant prices</p>
           </div>
@@ -108,7 +101,7 @@
         <div class="container restoran-content">
           <div data-animate="fadeInLeft" id="cooking">
             <div class="blur-restoran"></div>
-            <img src="./img/restoran.png" alt="restoran" class="img-restoran" />
+            <img src="./img/restoran.webp" alt="restoran" class="img-restoran" loading="lazy" />
           </div>
           <div class="restoran-text" data-animate="fadeInRight">
             <div class="blur-text"></div>
@@ -120,7 +113,7 @@
             </p>
             <div class="cooking">
               <button class="cooking__btn">Cooking Process</button>
-              <img src="./img/cooking.png" alt="cooking" />
+              <img src="./img/cooking.webp" alt="cooking" loading="lazy" />
             </div>
           </div>
         </div>
@@ -141,7 +134,7 @@
             <div class="slide-content">
               <div class="card-wrapper swiper-wrapper">
                 <div class="card swiper-slide">
-                  <img src="./img/brown-coffee.png" alt="brown-coffee" />
+                  <img src="./img/brown-coffee.webp" alt="brown-coffee" loading="lazy" />
                   <h3 class="card-coffee__title">Fast</h3>
                   <p class="card-coffee__item">
                     Our cafe will serve you quickly
@@ -153,7 +146,7 @@
                   <button class="card-coffee__btn">Buy product</button>
                 </div>
                 <div class="card swiper-slide">
-                  <img src="./img/yellow-coffee.png" alt="yellow-coffee" />
+                  <img src="./img/yellow-coffee.webp" alt="yellow-coffee" loading="lazy" />
                   <h3 class="card-coffee__title">Fast</h3>
                   <p class="card-coffee__item">
                     Our cafe will serve you quickly
@@ -165,7 +158,7 @@
                   <button class="card-coffee__btn">Buy product</button>
                 </div>
                 <div class="card swiper-slide">
-                  <img src="./img/green-coffee.png" alt="green-coffee" />
+                  <img src="./img/green-coffee.webp" alt="green-coffee" loading="lazy" />
                   <h3 class="card-coffee__title">Cappuccino</h3>
                   <p class="card-coffee__item">
                     Our cafe will serve you quickly
@@ -180,7 +173,7 @@
             </div>
           </div>
           <div class="icon-blur"></div>
-          <img src="./img/icon.png" alt="icon" class="swiper-next" />
+          <img src="./img/icon.webp" alt="icon" class="swiper-next" loading="lazy" />
         </div>
         <div class="swiper-global mobile-swiper" data-animate="fadeInLeft">
           <div class="mobile-slide-container swiper">
@@ -188,9 +181,10 @@
               <div class="mobile-card-wrapper swiper-wrapper">
                 <div class="mobile-card swiper-slide">
                   <img
-                    src="./img/brown-coffee.png"
+                    src="./img/brown-coffee.webp"
                     alt="brown-coffee"
                     class="mobile-card__img"
+                    loading="lazy"
                   />
                   <h3 class="mobile-card__title">Fast</h3>
                   <p class="mobile-card__desc">
@@ -204,9 +198,10 @@
                 </div>
                 <div class="mobile-card swiper-slide">
                   <img
-                    src="./img/yellow-coffee.png"
+                    src="./img/yellow-coffee.webp"
                     alt="yellow-coffee"
                     class="mobile-card__img"
+                    loading="lazy"
                   />
                   <h3 class="mobile-card__title">Fast</h3>
                   <p class="mobile-card__desc">
@@ -220,9 +215,10 @@
                 </div>
                 <div class="mobile-card swiper-slide">
                   <img
-                    src="./img/green-coffee.png"
+                    src="./img/green-coffee.webp"
                     alt="green-coffee"
                     class="mobile-card__img"
+                    loading="lazy"
                   />
                   <h3 class="mobile-card__title">Cappuccino</h3>
                   <p class="mobile-card__desc">
@@ -238,7 +234,7 @@
             </div>
           </div>
           <div class="mobile-icon-blur"></div>
-          <img src="./img/icon.png" alt="icon" class="mobile-swiper-next" />
+          <img src="./img/icon.webp" alt="icon" class="mobile-swiper-next" loading="lazy" />
         </div>
       </section>
       <section class="events" id="events">
@@ -295,7 +291,7 @@
               >
             </div>
           </div>
-          <img src="./img/contact.png" alt="contact" />
+          <img src="./img/contact.webp" alt="contact" loading="lazy" />
         </div>
       </section>
     </main>
@@ -341,14 +337,14 @@
             </ul>
           </div>
           <a href="#header" class="footer-main__anchor"
-            ><img src="./img/to-header.png" alt="to-header"
+            ><img src="./img/to-header.webp" alt="to-header" loading="lazy"
           /></a>
         </div>
         <div class="mobile-footer">
           <div class="footer-title-blur"></div>
           <h5 class="mobile-footer__title">StarBucks</h5>
           <a href="#header" class="footer-main__anchor"
-            ><img src="./img/to-header.png" alt="to-header" id="anchor"
+            ><img src="./img/to-header.webp" alt="to-header" id="anchor" loading="lazy"
           /></a>
           <div class="footer-links-container">
             <div class="footer-links">
@@ -392,7 +388,7 @@
           <a href="tel:+79999999999" class="footer-bottom__item"
             >+7-999-999-99-99</a
           >
-          <a href="#"><img src="./img/inst-logo.png" alt="inst-logo" /></a>
+          <a href="#"><img src="./img/inst-logo.webp" alt="inst-logo" loading="lazy" /></a>
         </div>
       </div>
     </footer>
