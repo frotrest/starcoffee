@@ -1,13 +1,13 @@
 .contacts {
   padding-top: 150px;
   padding-bottom: 100px;
-  background: url('../img/contacts-lines.png') no-repeat top 300px right -65px /
+  background: url('../img/contacts-lines.webp') no-repeat top 300px right -65px /
     auto;
   @media (max-width: 1294px) {
     & {
       padding-top: 65px;
       padding-bottom: 65px;
-      background: url('../img/contact-mobile.png') no-repeat top right -30px /
+      background: url('../img/contact-mobile.webp') no-repeat top right -30px /
         auto;
     }
   }
